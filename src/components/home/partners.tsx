@@ -44,7 +44,7 @@ const Partner = () => {
       </div>
 
       <div className="w-[80%] mx-auto my-[5rem]">
-        <Card className="flex flex-row items-center">
+        <Card className="flex flex-row items-center !py-0">
 			<div className="w-[50%]">
 			<CardHeader>
             <CardTitle className="text-[30px] py-5">Let’s <span className="text-[#0067FF]"> Build </span> Something Amazing <span className="text-[#0067FF]"> Together </span></CardTitle>
