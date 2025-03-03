@@ -10,12 +10,13 @@ import logo from "../../../public/logo.webp";
 
 const Footer = () => {
 	return ( 
-		<div className="bg-[#0B0A0A]">
+		<>
+			<div className="bg-[#0B0A0A] pl-8 lg:p-0">
 		
 		<div>
 			<div className="flex flex-col lg:flex-row justify-between lg:w-[95%] xl:w-[80%] mx-auto gap-8 py-[4rem]">
 				<div>
-					<Image src={logo} alt="logo"></Image>
+					<Image src={logo} alt="logo" className="w-[100px]!"></Image>
 					<p className="text-[14px] text-white w-[70%] my-6">Providing top-quality service is our highest priority. We deliver excellence that keeps you coming back.</p>
 					<div className="flex flex-row gap-3">
 						<FaInstagram color="white" size={28} ></FaInstagram>
@@ -54,9 +55,15 @@ const Footer = () => {
 			
 			</div>
 		</div>
-		<hr className="opacity-30"/>
-		<div className="text-white text-center opacity-30 text-[14px] py-8">Copyright © 2025 MJA IT SOLUTIONS | Powered by MJA IT SOLUTIONS</div>
+		
 		</div>
+		<div className="bg-[#0B0A0A]">
+<hr className="opacity-30"/>
+<div className="text-white text-center opacity-30 text-[12px] lg:text-[14px] py-8">Copyright © 2025 MJA IT SOLUTIONS | Powered by MJA IT SOLUTIONS</div>
+		</div>
+		</>
+	
+		
 	 );
 }
  

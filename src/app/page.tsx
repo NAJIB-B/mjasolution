@@ -8,9 +8,9 @@ export default function Home() {
   return (
 	<>
 		<Hero></Hero>
-		<Showcase></Showcase>
+		{/* <Showcase></Showcase>
 		<Testimonials></Testimonials>
-		<Partner></Partner>
+		<Partner></Partner> */}
 	</>
 
   );
