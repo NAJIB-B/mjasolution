@@ -61,7 +61,7 @@ const Hero = () => {
 	  <Image
         src={heroImg}
         alt="guy wearing black hoodie with VR"
-        className=" hidden lg:block lg:w-[60%] lg:right-[-4rem] xl:right-0 xl:w-[55%] 2xl:w-[45%] pt-[-5rem] absolute z-30 top-[20%] lg:top-[25%] xl:top-[10%] right-0"
+        className=" hidden lg:block lg:w-[60%] lg:right-[-4rem] xl:right-0 xl:w-[55%] 2xl:w-[45%] pt-[-5rem] absolute z-30 lg:top-[20%] xl:top-[10%] right-0"
       ></Image>
 	   <Image
         src={heroImg}
