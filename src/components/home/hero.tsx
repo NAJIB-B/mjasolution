@@ -19,7 +19,7 @@ const Hero = () => {
 		backgroundPosition: "top"
 
 	  }}>
-		<div className="w-[13%] ml-[5%] ">
+		<div className="w-[15%] ml-[5%] ">
 				<Image src={logo} alt="mja logo" className="p-0"></Image>
 			</div>
       <div className="ml-[5%] mt-[2rem] lg:mt-[3rem] relative w-[50%]">
