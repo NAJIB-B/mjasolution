@@ -12,15 +12,15 @@ const links = [
 		link: "/",
 	},
 	{
-		name: "SALES",
+		name: "SERVICES",
 		link: "/services",
 	},
 	{
-		name: "WORKSHOP",
+		name: "ABOUT",
 		link: "/about",
 	},
 	{
-		name: "INNOVATION",
+		name: "CONTACT",
 		link: "/contact",
 	},
 
@@ -28,15 +28,15 @@ const links = [
 
 const Navbar = () => {
 	return ( 
-		<div className="w-[80%] mx-auto flex justify-between flex-row bg-transparent absolute top-4 left-[50%] translate-x-[-50%] z-50">
+		<div className=" flex justify-between flex-row bg-transparent absolute top-4 left-[50%] translate-x-[-50%] z-50">
 			
 			{/* <div className="w-[50%] p-0">
 				<Image src={logo} alt="mja logo" className="p-0"></Image>
 			</div> */}
-			{/* <div className="flex justify-around flex-row gap-4 items-center">
-				{links.map((link, key) => <Link key={key} href={link.link} className="text-white">{link.name}</Link>)}
+			<div className="flex justify-around flex-row gap-4 items-center">
+				{links.map((link, key) => <Link key={key} href={link.link} className="text-white font-bold">{link.name}</Link>)}
 				
-			</div> */}
+			</div>
 
 			
 		</div>
