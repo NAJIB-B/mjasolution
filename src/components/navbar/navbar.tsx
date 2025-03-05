@@ -34,7 +34,7 @@ const Navbar = () => {
 				<Image src={logo} alt="mja logo" className="p-0"></Image>
 			</div> */}
 			<div className="flex justify-around flex-row gap-4 items-center">
-				{links.map((link, key) => <Link key={key} href={link.link} className="text-white font-bold">{link.name}</Link>)}
+				{links.map((link, key) => <Link key={key} href={link.link} className={`text-white font-bold transition-transform translate-y-4 delay-[${10 * key}]`}>{link.name}</Link>)}
 				
 			</div>
 

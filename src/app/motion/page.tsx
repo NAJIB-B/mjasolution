@@ -10,12 +10,25 @@ const Motion = () => {
 			{/* <Button className="bg-amber-700 p-4 m-4 w-[6rem]">testing</Button> */}
 			<motion.div
 			initial={{
-				backgroundColor: "blue",
+				rotate: "0deg",
+				left: "0px",
+				scale: 0
 			}}
 			animate={{
-				backgroundColor: "green",
+				rotate: "360deg",
+				left: "auto",
+				scale: 1
+
 			}}
-			className="w-[150px] h-[150px]"></motion.div>
+			transition={{
+				duration: 3,
+				ease: "anticipate"
+
+			}}
+			exit={{
+				scale: 0
+			}}
+			className="w-[150px] h-[150px] bg-amber-500"></motion.div>
 		</div>
 	 );
 }

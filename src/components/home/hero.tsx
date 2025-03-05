@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -9,6 +10,7 @@ import bigCloud from "../../../public/bigCloud.webp";
 
 import logo from "../../../public/bigLogo.webp"
 import background from "../../../public/heroBackground.webp"
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -19,53 +21,25 @@ const Hero = () => {
 		backgroundPosition: "top"
 
 	  }}>
-		<div className="w-[15%] ml-[5%] ">
-				<Image src={logo} alt="mja logo" className="p-0"></Image>
+		<div 
+		className="w-[15%] ml-[5%]">
+				<Image src={logo} alt="mja logo" className="p-0 animate-bounce"></Image>
 			</div>
-      <div className="ml-[5%] mt-[2rem] lg:mt-[3rem] relative w-[50%]">
+      <div 
+	
+
+	  className="ml-[5%] mt-[2rem] lg:mt-[3rem] relative w-[50%] animate-bounce">
         <h1 className="font-extrabold text-[3rem] sm:text-[4rem] sm:leading-[4rem] lg:text-[6rem] leading-[3rem] lg:leading-[6rem] my-3">Innovating Tomorrow</h1>
         <p className="text-[22px] lg:w-[50%]">
-			Innovate. Secure. Transform Your IT Partner
-          {/* Empowering businesses with cutting-edge IT solutions for a smarter,
-          safer, and more efficient future. */}
-        </p>
-
-        {/* <div className="flex flex-row items-center gap-2 my-4">
-          <div className="flex flex-row">
-            <Avatar>
-              <AvatarImage src={avatar.src} />
-              <AvatarFallback>AV</AvatarFallback>
-            </Avatar>
-            <Avatar className="-ml-3">
-              <AvatarImage src={avatar.src} />
-              <AvatarFallback>AV</AvatarFallback>
-            </Avatar>
-            <Avatar className="-ml-3">
-              <AvatarImage src={avatar.src} />
-              <AvatarFallback>AV</AvatarFallback>
-            </Avatar>
-            <Avatar className="-ml-3">
-              <AvatarImage src={avatar.src} />
-              <AvatarFallback>AV</AvatarFallback>
-            </Avatar>
-            <Avatar className="-ml-3">
-              <AvatarImage src={avatar.src} />
-              <AvatarFallback>AV</AvatarFallback>
-            </Avatar>
-          </div>
-
-          <p className="text-[14px]">Trusted by 540+ people </p>
-        </div> */}
-
-        {/* <Button className="bg-transparent border-2 border-white text-[13px] font-semibold">
-          Get Started
-        </Button> */}
+			Innovate. Secure. Transform Your IT Partner</p>
+         
       </div>
 	  <div className="">
 	  <Image
+	  	
         src={heroImg}
         alt="guy wearing black hoodie with VR"
-        className=" hidden lg:block lg:w-[60%] lg:right-[-4rem] xl:right-0 xl:w-[55%] 2xl:w-[45%] pt-[-5rem] absolute z-30 lg:top-[20%] xl:top-[10%] right-0"
+        className=" hidden lg:block lg:w-[60%] lg:right-[-4rem] xl:right-0 xl:w-[55%] 2xl:w-[45%] pt-[-5rem] absolute z-30 lg:top-[20%] xl:top-[10%] right-0 animate-pulse"
       ></Image>
 	   <Image
         src={heroImg}
@@ -82,3 +56,39 @@ const Hero = () => {
 };
 
 export default Hero;
+
+
+ {/* Empowering businesses with cutting-edge IT solutions for a smarter,
+          safer, and more efficient future. */}
+        
+
+{/* <div className="flex flex-row items-center gap-2 my-4">
+  <div className="flex flex-row">
+	<Avatar>
+	  <AvatarImage src={avatar.src} />
+	  <AvatarFallback>AV</AvatarFallback>
+	</Avatar>
+	<Avatar className="-ml-3">
+	  <AvatarImage src={avatar.src} />
+	  <AvatarFallback>AV</AvatarFallback>
+	</Avatar>
+	<Avatar className="-ml-3">
+	  <AvatarImage src={avatar.src} />
+	  <AvatarFallback>AV</AvatarFallback>
+	</Avatar>
+	<Avatar className="-ml-3">
+	  <AvatarImage src={avatar.src} />
+	  <AvatarFallback>AV</AvatarFallback>
+	</Avatar>
+	<Avatar className="-ml-3">
+	  <AvatarImage src={avatar.src} />
+	  <AvatarFallback>AV</AvatarFallback>
+	</Avatar>
+  </div>
+
+  <p className="text-[14px]">Trusted by 540+ people </p>
+</div> */}
+
+{/* <Button className="bg-transparent border-2 border-white text-[13px] font-semibold">
+  Get Started
+</Button> */}
