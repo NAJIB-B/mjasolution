@@ -19,10 +19,10 @@ const Hero = () => {
 		backgroundPosition: "top"
 
 	  }}>
-		<div className="w-[30%] ml-[5%] ">
+		<div className="w-[13%] ml-[5%] ">
 				<Image src={logo} alt="mja logo" className="p-0"></Image>
 			</div>
-      <div className="ml-[5%] relative w-[50%]">
+      <div className="ml-[5%] mt-[2rem] lg:mt-[3rem] relative w-[50%]">
         <h1 className="font-extrabold text-[3rem] sm:text-[4rem] sm:leading-[4rem] lg:text-[6rem] leading-[3rem] lg:leading-[6rem] my-3">Innovating Tomorrow</h1>
         <p className="text-[22px] lg:w-[50%]">
 			Innovate. Secure. Transform Your IT Partner
