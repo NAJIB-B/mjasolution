@@ -34,7 +34,7 @@ const Hero = () => {
 			Innovate. Secure. Transform Your IT Partner</p>
          
       </div>
-	  <div className="">
+	  <div className="flex justify-end">
 	  <Image
 	  	
         src={heroImg}
@@ -44,7 +44,7 @@ const Hero = () => {
 	   <Image
         src={heroImg}
         alt="guy wearing black hoodie with VR"
-        className="relative right-[-5%] lg:hidden"
+        className="relative right-0 lg:hidden animate-pulse"
       ></Image>
 	  {/* <Image src={bigCloud} alt="big cloud" className="bottom-0 left-[-50%] absolute z-10 w-[80%]"></Image>
 	  <Image src={bigCloud} alt="small cloud" className="top-[40%] right-[-30%] absolute z-10 w-[80%]"></Image> */}
