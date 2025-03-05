@@ -8,14 +8,18 @@ import heroImg from "../../../public/heroImg.webp";
 import bigCloud from "../../../public/bigCloud.webp";
 
 import logo from "../../../public/bigLogo.webp"
+import background from "../../../public/heroBackground.webp"
 
 const Hero = () => {
   return (
     <div className="bg-[#1D58CF] text-white flex flex-col justify-center overflow-hidden relative pt-[6rem] lg:py-[6rem] font-pop lg:h-[100vh] h-auto"
 	style={{
-		background: `linear-gradient(#2D40DC, #120D66)`
+		background: `url(${background.src})`,
+		backgroundRepeat: "no-repeat",
+		backgroundPosition: "top"
+
 	  }}>
-		<div className="w-[30%] ml-[0.5rem] lg:ml-[1.5rem]">
+		<div className="w-[30%] ml-[0.5rem] lg:ml-[1.5rem] 2xl:ml-[2.1rem]">
 				<Image src={logo} alt="mja logo" className="p-0"></Image>
 			</div>
       <div className="ml-[5%] relative w-[50%]">

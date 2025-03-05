@@ -29,9 +29,9 @@ const Footer = () => {
 					<h4 className=" font-semibold text-[18px]">COMPANY</h4>
 					<div className="flex flex-col">
 					<Link href={"/"}>Home</Link>
-					<Link href={"/"}>services</Link>
-					<Link href={"/"}>About</Link>
-					<Link href={"/"}>Contact</Link>
+					<Link href={"/services"}>services</Link>
+					<Link href={"/about"}>About</Link>
+					<Link href={"/contact"}>Contact</Link>
 					</div>
 					
 				</div>
